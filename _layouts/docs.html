@@ -1,0 +1,43 @@
+---
+layout: default
+class: fill-light
+options: full
+---
+
+<link href="{{site.url}}/css/docs.css" rel="stylesheet">
+
+<!--Fixed sidebar navigation-->
+<div class='docnav hide-mobile'>
+  <div class='limiter'><div class='col3 contain'>
+    <nav class='scroll-styled quiet-scroll small'>
+      {% for item in site.categories.services reversed %}
+      {% unless item.hidden %}
+      {% if item.subnav %}
+      <div class='space-bottom1'>
+        <a class='block truncat strong quiet {% if page.url == item.url %} active{% endif %}' href='{{site.baseurl}}{{item.url}}/'>{{item.title}}</a>
+        {% for subitem in item.subnav %}
+        <a class='block truncate' href='{{site.baseurl}}{{item.url}}/#{{subitem.id}}'>{{subitem.title}}</a>
+        {% endfor %}
+      </div>
+      {% else %}
+      <a class='block truncate {% if page.url == item.url %} active{% endif %}' href='{{site.baseurl}}{{item.url}}/'>{{item.title}}</a>
+      {% endif %}
+      {% endunless %}
+      {% endfor %}
+    </nav>
+  </div></div>
+</div>
+
+<div class='limiter clearfix pad2y'>
+  {% include nav.html %}
+
+  <div class='contain margin3 col9'>
+    {% if page.splash %}{{page.splash}}{% endif %}
+    <div class='pad2 round doc prose fill-white keyline-all'>
+      <h1>{{page.title}}</h1>
+
+      {{content}}
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+---
+layout: docs
+---
+
+<link href='{{site.baseurl}}/css/site.css' rel='stylesheet' />
+
+{% for post in site.categories.specification reversed %}
+<section id="{{ post.id }}">
+  {% if post.title != "Introduction" %}
+  <h2 class="section-header">{{ post.title }}</h2>
+  {% endif %}
+  <div class="post-content">{{ post.content }}</div>
+</section>
+{% endfor %}
+
+<script src="{{site.baseurl}}/js/site.js"></script>

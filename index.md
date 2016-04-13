@@ -1,7 +1,7 @@
 ---
 title: Vector Tiles
 layout: docs
-permalink: /vector-tiles/
+permalink: /developers/vector-tiles/
 ---
 
 Vector tiles make huge maps fast while offering full design flexibility. They are the vector data equivalent of image tiles for web mapping, applying the strengths of tiling -- developed for caching, scaling and serving map imagery rapidly -- to vector data.
@@ -12,7 +12,7 @@ Traditionally, maps are created from image tiles. Like for instance this PNG ima
 
 To get the underlying vector tile data that makes up this image, you can request it specifically:
 
-    http://a.tiles.mapbox.com/v4/mapbox.mapbox-streets-v6/14/4823/6160.vector.pbf?access_token=<your access token>
+    http://a.tiles.mapbox.com/v4/mapbox.mapbox-streets-v6/14/4823/6160.mvt?access_token=<your access token>
 
 As the name suggests, vector tiles contain vector data instead of the rendered image. They contain geometries and metadata -- like road names, place names, house numbers -- in a compact, structured format. Vector tiles are rendered only when requested by a client, like a web browser or a mobile app. Rendering happens either in the client ([Mapbox GL JS](https://www.mapbox.com/mapbox-gl-js/api/), [Mapbox iOS SDK](https://www.mapbox.com/developers/#gl-ios), [Mapbox Android SDK](https://www.mapbox.com/developers/#android)) or on the fly on the server ([map API](https://www.mapbox.com/developers/api/maps/)).
 

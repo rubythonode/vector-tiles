@@ -1,4 +1,6 @@
 ---
+layout: redirect
+redirect: /developers/vector-tiles/specification/
 title: Encoding attributes
 id: encoding-attr
 category: specification

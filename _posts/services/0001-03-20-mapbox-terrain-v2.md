@@ -3,7 +3,7 @@ layout: docs
 section: developers
 category: services
 title: Mapbox Terrain
-permalink: /vector-tiles/mapbox-terrain-v2
+permalink: /developers/vector-tiles/mapbox-terrain-v2
 options: full
 class: fill-light
 subnav:

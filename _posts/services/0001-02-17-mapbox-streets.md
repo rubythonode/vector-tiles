@@ -2,7 +2,7 @@
 layout: redirect
 title: Mapbox Streets
 category: services
-permalink: /vector-tiles/services/mapbox-streets/
-redirect: /vector-tiles/services/mapbox-streets-v7/
+permalink: /developers/vector-tiles/mapbox-streets/
+redirect: /developers/vector-tiles/mapbox-streets-v7/
 hidden: true
 ---

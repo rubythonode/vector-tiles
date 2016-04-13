@@ -15,12 +15,10 @@ body {}
   margin-left: 2em;
   line-height: 1.5em;
 }
-.vtnav {
+/*.vtnav {
   width: 100%;
-}
-.sidebar {
-  /*font-size: 0.85em;*/
-}
+}*/
+
 section {
   margin-bottom: 3em;
 }

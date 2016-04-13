@@ -1,4 +1,6 @@
 ---
+layout: redirect
+redirect: /developers/vector-tiles/specification/
 title: Versioning
 id: versioning
 category: specification
@@ -11,6 +13,7 @@ The `major` version in the specification name is synonymous with the `version` f
 Current version: **2.1**
 
 **Version** | **Date of release** | **Updates**
+-|-|-
 **`2.1`** | January 19th, 2016| Correction to the wording in a few locations of the 2.0 specification.
 **`2.0`** | December 4th, 2015 | The focus of version `2.0` of the Mapbox Vector Tile specification is the clarification of the intent of the intial version of the specification and the definition of interior and exterior rings within polygons. The fields within the protobuffer are more clearly defined in this version of the specification and the steps for decoders and encoders are more explicity declared.
 **`1.0.1`** | July 28, 2014 | Update `.proto` file to match Protobuf style guide, changed namespace

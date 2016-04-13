@@ -10,6 +10,9 @@ options: full
 <div class='docnav hide-mobile'>
   <div class='limiter'><div class='col3 contain'>
     <nav class='scroll-styled quiet-scroll small'>
+    {% if page.url == "/developers/vector-tiles/specification/" %}
+      {% include sidebar.html %}
+    {% else %}
       {% for item in site.categories.services reversed %}
       {% unless item.hidden %}
       {% if item.subnav %}
@@ -24,6 +27,7 @@ options: full
       {% endif %}
       {% endunless %}
       {% endfor %}
+    {% endif %}
     </nav>
   </div></div>
 </div>

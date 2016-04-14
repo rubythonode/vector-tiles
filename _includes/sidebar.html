@@ -2,7 +2,7 @@
   <span class="strong block quiet">Contents</span>
   <ul>
   {% for post in site.categories.specification reversed %}
-    <li><a href="#{{ post.id }}">{{ post.title }}</a></li>
+    <li><a href="#{{ post.hash }}">{{ post.title }}</a></li>
   {% endfor %}
   </ul>
 </div>

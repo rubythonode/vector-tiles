@@ -2,7 +2,7 @@
 layout: redirect
 redirect: /vector-tiles/specification/
 title: Encoding geometry
-id: encoding-geom
+hash: encoding-geom
 category: specification
 ---
 

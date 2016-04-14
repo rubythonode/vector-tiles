@@ -2,7 +2,7 @@
 layout: redirect
 redirect: /vector-tiles/specification/
 title: Introduction
-id: introduction
+hash: introduction
 category: specification
 ---
 

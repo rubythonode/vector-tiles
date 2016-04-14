@@ -2,7 +2,7 @@
 layout: redirect
 redirect: /vector-tiles/specification/
 title: What the spec doesn't cover
-id: not-included
+hash: not-included
 category: specification
 ---
 

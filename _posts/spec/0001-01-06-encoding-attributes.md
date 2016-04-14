@@ -2,7 +2,7 @@
 layout: redirect
 redirect: /vector-tiles/specification/
 title: Encoding attributes
-id: encoding-attr
+hash: encoding-attr
 category: specification
 ---
 

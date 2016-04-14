@@ -2,7 +2,7 @@
 layout: redirect
 redirect: /vector-tiles/specification/
 title: Versioning
-id: versioning
+hash: versioning
 category: specification
 ---
 

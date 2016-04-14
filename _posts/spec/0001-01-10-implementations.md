@@ -2,7 +2,7 @@
 layout: redirect
 redirect: /vector-tiles/specification/
 title: Implementations
-id: implementations
+hash: implementations
 category: specification
 ---
 

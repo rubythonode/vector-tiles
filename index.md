@@ -1,7 +1,6 @@
 ---
 title: Vector Tiles
 layout: docs
-permalink: /developers/vector-tiles/
 ---
 
 Vector tiles make huge maps fast while offering full design flexibility. They are the vector data equivalent of image tiles for web mapping, applying the strengths of tiling -- developed for caching, scaling and serving map imagery rapidly -- to vector data.

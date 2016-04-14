@@ -12,3 +12,4 @@ spec_url: https://github.com/mapbox/vector-tile-spec/
 version_url: https://github.com/mapbox/vector-tile-spec/tree/master/
 current: 2.1
 permalink: /:categories/:title
+baseurl: /vector-tiles

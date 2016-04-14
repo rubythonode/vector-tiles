@@ -3,7 +3,7 @@ layout: docs
 section: developers
 category: services
 title: Mapbox Streets v5
-permalink: /developers/vector-tiles/mapbox-streets-v5
+permalink: /mapbox-streets-v5
 options: full
 class: fill-light
 subnav:

@@ -1,6 +1,6 @@
 ---
 layout: redirect
-redirect: /developers/vector-tiles/specification/
+redirect: /vector-tiles/specification/
 title: What the spec doesn't cover
 id: not-included
 category: specification

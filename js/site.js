@@ -5,14 +5,16 @@ var cellSize = 15,
     buffx = padding + (buffer * cellSize),
     stepCount = 0,
     btn,
-    title = document.getElementById('vt-title'),
-    desc = document.getElementById('vt-description'),
-    command = document.getElementById('vt-command'),
-    commandSteps = document.getElementById('vt-command-steps'),
+    title,
+    desc,
+    command,
     ctx,
     grid;
 
 window.onload = function() {
+  title = document.getElementById('vt-title'),
+  desc = document.getElementById('vt-description'),
+  command = document.getElementById('vt-command'),
   grid = document.getElementById('grid');
   makeGrid(grid, tilesize, buffer);
   btn = document.getElementById('vt-next');
@@ -168,7 +170,7 @@ function next(index) {
     }
     // then draw the single pen
     s.pen();
-    
+
     addStep(s.commandx, s.color);
     stepCount++;
   } catch (err) {
@@ -176,7 +178,7 @@ function next(index) {
     desc.innerHTML = 'The vector tile to the left is a 10x10 grid with 2 cell buffer. Let\'s encode some geometry to the grid starting with a <span class="poly blue">blue polygon</span>. The following commands will be relative to the <span class="poly black">pen</span> (black dot).';
     command.innerHTML = 'An empty vector tile';
     btn.innerHTML = 'Next step';
-    commandSteps.innerHTML = '';
+    document.getElementById('vt-command-steps').innerHTML = '';
     stepCount=0;
   }
 }
@@ -186,7 +188,7 @@ function addStep(cmd, color) {
   elem.className = 'command-step';
   elem.style.color = color;
   elem.innerHTML = cmd;
-  commandSteps.appendChild(elem);
+  document.getElementById('vt-command-steps').appendChild(elem);
 }
 
 var cmd = {

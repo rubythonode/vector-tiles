@@ -112,4 +112,4 @@ The conversion from geographic coordinates (latitude and longitude) to vector ti
 
 Interested in diving into the complete specification? Take a look at the [repository on Github]({{site.version_url}}{{site.current}}). If you have any questions or notice anything incorrect with this page or the specification, you can [submit an issue]({{site.spec_url}}issues/) and we'll work through it.
 
-<a href="icon prev">Back to vector tiles</a>
+[Back to vector tiles](/vector-tiles/)

@@ -154,6 +154,10 @@ Attribute encoding example
 .feat.highlight {
   background: #ccffe2;
 }
+.code {
+  line-height: 1.7em;
+  font-size: 0.8em;
+}
 
 
 /*

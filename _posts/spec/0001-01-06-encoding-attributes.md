@@ -16,10 +16,12 @@ Attributes are encoded in a series of `tag`s that exist within a feature in the 
   </div>
 
   <div class="js-example-body pad2 col12">
-    <div class="col6 pad1"><strong>Original geojson</strong><br><br><pre><code>{
+    <div class="col6 pad1">
+      <h3>Original geojson</h3>
+<div class="code">{
   "type": "FeatureCollection",
     "features": [
-    <span class='feature' data-feat='1'>{
+    <span class='feature' data-feat='1' id='thisthing'>{
   "geometry": { ... },
   "type": "Feature",
   "properties": {
@@ -37,49 +39,77 @@ Attributes are encoded in a series of `tag`s that exist within a feature in the 
   }
 }</span>
   ]
-}
-</code></pre></div>
-    <div class="col6 pad1"><strong>Final vector tile<br><br></strong><pre><code>layers {
+}</div>
+
+</div>
+    <div class="col6 pad1">
+      <h3>Final vector tile</h3>
+<div class="code">layers {
   version: 2
   name: "points"
   <span class='feat' id='feat1'>features: {
-    id: 1
-    <span class='tagset' id='attr1'><span class='tag-key'>tags: 0</span>
+  id: 1
+  <span class='tagset' id='attr1'><span class='tag-key'>tags: 0</span>
 <span class='tag-value'>tags: 0</span></span>
-    <span class='tagset' id='attr2'><span class='tag-key'>tags: 1</span>
+  <span class='tagset' id='attr2'><span class='tag-key'>tags: 1</span>
 <span class='tag-value'>tags: 0</span></span>
-    <span class='tagset' id='attr3'><span class='tag-key'>tags: 2</span>
+  <span class='tagset' id='attr3'><span class='tag-key'>tags: 2</span>
 <span class='tag-value'>tags: 1</span></span>
-    type: Point
-    geometry: ...
-  }</span>
+  type: Point
+  geometry: ...
+}</span>
   <span class='feat' id='feat2'>features {
-    id: 1
-    <span class='tagset' id='attr4'><span class='tag-key'>tags: 0</span>
+  id: 1
+  <span class='tagset' id='attr4'><span class='tag-key'>tags: 0</span>
 <span class='tag-value'>tags: 2</span></span>
-    <span class='tagset' id='attr5'><span class='tag-key'>tags: 2</span>
+  <span class='tagset' id='attr5'><span class='tag-key'>tags: 2</span>
 <span class='tag-value'>tags: 3</span></span>
-    type: Point
-    geometry: ...
-  }</span>
+  type: Point
+  geometry: ...
+}</span>
   <span class='key' id='key-hello'>keys: "hello"</span>
   <span class='key' id='key-h'>keys: "h"</span>
   <span class='key' id='key-count'>keys: "count"</span>
   <span class='value' id='value-world'>values: {
-    string_value: "world"
-  }</span>
+  string_value: "world"
+}</span>
   <span class='value' id='value-1.23'>values: {
-    double_value: 1.23
-  }</span>
+  double_value: 1.23
+}</span>
   <span class='value' id='value-again'>values: {
-    string_value: "again"
-  }</span>
+  string_value: "again"
+}</span>
   <span class='value' id='value-2'>values: {
-    int_value: 2
-  }</span>
+  int_value: 2
+}</span>
   extent: 4096
-}
-      
-</code></pre></div>
+}</div>
+      </div>
   </div>
 </div>
+
+<script>
+// attr encoding example
+$('.feature').on('mouseenter', featureEnter);
+$('.feature').on('mouseleave', featureLeave);
+
+function featureEnter(e) {
+  var id = $(this).attr('data-feat');
+  $('#feat'+id).addClass('highlight');
+}
+function featureLeave(e) {
+  $('.feat').removeClass('highlight');
+}
+
+$('.attr').on('mouseenter', attrEnter);
+$('.attr').on('mouseleave', attrLeave);
+function attrEnter(e) {
+  console.log($(this).attr('data-attr'));
+  $('#attr'+$(this).attr('data-attr')).addClass('highlight');
+  $('#key-'+$(this).attr('data-key')).addClass('highlight');
+  $('#value-'+$(this).attr('data-value')).addClass('highlight');
+}
+function attrLeave(e) {
+  $('.tagset, .key, .value').removeClass('highlight');
+}
+</script>

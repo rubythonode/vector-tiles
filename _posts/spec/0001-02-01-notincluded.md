@@ -113,3 +113,49 @@ The conversion from geographic coordinates (latitude and longitude) to vector ti
 Interested in diving into the complete specification? Take a look at the [repository on Github]({{site.version_url}}{{site.current}}). If you have any questions or notice anything incorrect with this page or the specification, you can [submit an issue]({{site.spec_url}}issues/) and we'll work through it.
 
 [Back to vector tiles](/vector-tiles/)
+
+<script>
+setInterval(function() {
+  rotateInvalids('simp');
+}, 3000);
+
+setInterval(function() {
+  rotateFlips('flip');
+}, 3000);
+
+var invalidStep = 2;
+var flipStep = 2;
+function rotateInvalids(prefix) {
+  try {
+    // show this one
+    var invalid = document.getElementById(prefix+invalidStep);
+    invalid.setAttribute('class', ' show');
+
+    // hide previous
+    var p = (invalidStep == 1) ? 4 : invalidStep - 1;
+    var prev = document.getElementById(prefix+p);
+    prev.setAttribute('class', '');
+
+    // increment
+    invalidStep++;
+  } catch (err) {
+    invalidStep = 1;
+  }
+}
+function rotateFlips(prefix) {
+  try {
+    // show this one
+    var flip = document.getElementById(prefix+flipStep);
+    flip.setAttribute('class', ' show');
+
+    // hide previous
+    var p = (flipStep == 1) ? 4 : flipStep - 1;
+    var prev = document.getElementById(prefix+p);
+    prev.setAttribute('class', '');
+
+    // increment
+    flipStep++;
+  } catch (err) {
+    flipStep = 1;
+  }
+}

@@ -7,7 +7,7 @@ Vector tiles make huge maps fast while offering full design flexibility. They ar
 
 Traditionally, maps are created from image tiles. Like for instance this PNG image tile depicting the corner of lower Manhattan with roads, building footprints, and parks:
 
-![]({{site.tileApi}}/v4/mapbox.streets/14/4823/6160.png?access_token={{site.accessToken}})
+![](https://api.mapbox.com/v4/mapbox.streets/14/4823/6160.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpbG10dnA3NzY3OTZ0dmtwejN2ZnUycjYifQ.1W5oTOnWXQ9R1w8u3Oo1yA)
 
 To get the underlying vector tile data that makes up this image, you can request it specifically:
 

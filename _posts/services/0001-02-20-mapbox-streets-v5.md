@@ -85,11 +85,11 @@ With raw OSM IDs it's possible for two different objects of different types to s
 
 <table class='small'>
 <tr><th>Original OSM object</th><th>Vector tile geometry</th><th>ID transform</th><th>Example</th></tr>
-<tr><td>node</td><td>point</td><td>original + 10<sup>15</sup></td><td>123 → 1000000000000123</td></th>
-<tr><td>way</td><td>line</td><td>none</td><td>123 → 123</td></th>
-<tr><td>way</td><td>polygon, point</td><td>original + 10<sup>12</sup></td><td>123 → 1000000000123</td></th>
-<tr><td>relation</td><td>line</td><td>original + 2×10<sup>12</sup></td><td>123 → 2000000000123</td></th>
-<tr><td>relation</td><td>polygon, point</td><td>original + 3×10<sup>12</sup></td><td>123 → 3000000000123</td></th>
+<tr><td>node</td><td>point</td><td>original + 10<sup>15</sup></td><td>123 → 1000000000000123</td></tr>
+<tr><td>way</td><td>line</td><td>none</td><td>123 → 123</td></tr>
+<tr><td>way</td><td>polygon, point</td><td>original + 10<sup>12</sup></td><td>123 → 1000000000123</td></tr>
+<tr><td>relation</td><td>line</td><td>original + 2×10<sup>12</sup></td><td>123 → 2000000000123</td></tr>
+<tr><td>relation</td><td>polygon, point</td><td>original + 3×10<sup>12</sup></td><td>123 → 3000000000123</td></tr>
 </table>
 
 Some objects in the vector tiles are the result of merging multple OSM objects. In these cases, the __`osm_id`__ will be based on just one of the original IDs (and there is no guarantee about which one). Some objects are not from OSM at all, or processed in such a way that the original OSM IDs are unknown (eg. ocean polygons). In these cases, the __`osm_id`__ will be `0`.

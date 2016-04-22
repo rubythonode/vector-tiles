@@ -1,14 +1,31 @@
 ---
-layout: docs
+layout: default
 ---
 
 <link href='{{site.baseurl}}/css/site.css' rel='stylesheet' />
 
-{% for post in site.categories.specification reversed %}
-<section id="{{ post.hash }}">
-  {% if post.title != "Introduction" %}
-  <h2 class="section-header">{{ post.title }}</h2>
-  {% endif %}
-  <div class="post-content">{{ post.content }}</div>
-</section>
-{% endfor %}
+
+<div class='col12 fill-blue dark clearfix space-bottom4 pad4y' style='background-image: url(https://c2.staticflickr.com/2/1525/25975531294_d818a1520e_o.jpg); background-size: cover; background-position: 50%;'>
+  <div class='limiter pad8y'>
+    <h2 class='fancy'>{{page.title}}</h2>
+    <p class='prose-big'>{{page.description}}</p>
+  </div>
+</div>
+
+<div class='col12 clearfix'>
+  <div class='limiter'>
+    <div class='col9'>
+    {% for post in site.categories.specification reversed %}
+      <section id="{{ post.hash }}">
+        {% if post.title != "Introduction" %}
+        <h2 class="section-header">{{ post.title }}</h2>
+        {% endif %}
+        <div class="content">{{ post.content }}</div>
+      </section>
+    {% endfor %}
+    </div>
+    <div class='col3 pad2x'>
+      {% include sidebar.html %}
+    </div>
+  </div>
+</div>

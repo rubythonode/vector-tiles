@@ -10,25 +10,32 @@ To encode geographic information into a vector tile a tool must convert geograph
 
 Vector tiles do not store spatial information as we know it. Each vector tile is a grid
 
-<div id="js-example-encoding" class="js-example clearfix">
-  <div class="js-example-header pad2">
+<div id="js-example-encoding" class="js-example clearfix bleed-section">
+  <div class="js-example-header">
     <h3>Encoding example</h3>
     <p>This is a step-by-step example showing how a single vector tile encodes geometry in the grid. It follows the commands of the "pen" to encode two rings.</p>
   </div>
 
-  <div class="js-example-body pad2">
-    <div id="visuals">
-      <canvas id="grid"></canvas>
-      <h4>Commands</h4>
-      <pre><code id="vt-command-steps"></code></pre>
-    </div>
-    <button id="vt-next" class="button fill-green rcon next">Next step</button>
-    <div id="vt-info">
+  <div class="js-example-body">
+    <div id="vt-info" class="col6 pad1x">
+      <button id="vt-next" class="button fill-green rcon next fr">Next step</button>
       <h4 id="vt-title">Step 0</h4>
       <p id="vt-command">An empty vector tile</p>
       <p id="vt-description">The vector tile to the left is a 10x10 grid with 2 cell buffer. Let's encode some geometry to the grid. Let's start with the <span class="poly blue">blue polygon</span>.</p>
     </div>
+    <div id="visuals" class="col3">
+      <h4>Vector Tile Grid</h4>
+      <canvas id="grid"></canvas>
+    </div>
+    <div class="col3">
+      <h4>Commands</h4>
+      <pre><code id="vt-command-steps"></code></pre>
+    </div>
   </div>
+</div>
+
+<div id="js-example-encoding2" class="js-example clearfix">
+
 </div>
 
 ### How are geometry clipped?

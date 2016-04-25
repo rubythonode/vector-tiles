@@ -22,13 +22,9 @@ A common question, when it comes to clipping is "how do renderers know which lin
 
 ### Simplification
 
-The conversion from geographic coordinates (latitude and longitude) to vector tile coordinates (x, y) is an important step, but can be implemented in many different ways prior to vector tile encoding. It is not included in this specification, but there are some important GOTCHAs worth noting:
+The conversion from geographic coordinates (latitude and longitude) to vector tile coordinates (x, y) is an important step, but can be implemented in many different ways prior to vector tile encoding. It is not included in this specification, but there are some important GOTCHAs worth noting.
 
 <div class="js-example clearfix">
-  <div class="js-example-header">
-    <h3>Simplification & Rounding GOTCHAs</h3>
-    <p>Even though simplification is not a part of the specification, these are some tricky situations to keep in mind as you implement a simplification or rounding algorithm.</p>
-  </div>
   <div class="js-example-body">
     <div class="col12 clearfix">
       <div class="col6">

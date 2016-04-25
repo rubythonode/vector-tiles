@@ -26,17 +26,13 @@ section {
 }
 @media only screen and (min-width: 1200px) {
   .js-example {
-    margin: 5em -25% 5em -20px;
+    margin: 2em -25% 5em -20px;
   }
 }
 .js-example {
   font-family: monospace;
   padding-left: 20px;
   border-left: 5px solid #3bb2d0;
-}
-.js-example-header {
-  margin-bottom: 1em;
-  font-family: monospace;
 }
 .js-example-body {}
 td {

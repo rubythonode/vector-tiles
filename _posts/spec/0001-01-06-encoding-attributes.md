@@ -8,12 +8,10 @@ category: specification
 
 Attributes are encoded in a series of `tag`s that exist within a feature in the vector that have integer values that reference `keys` and `values` designating the original key:value pairs from the geometry. For large geometry, this removes redundancy for attributes that have the same keys and similar values.
 
-<div id="js-example-encoding" class="js-example clearfix">
-  <div class="js-example-header">
-    <p>Take a look at the original geojson <code>FeatureCollection</code> on the left and see how it's individual parts are encoded into the proper <code>tags</code> of the vector tile protobuf.</p>
+Take a look at the original geojson `FeatureCollection` on the left and see how it's individual parts are encoded into the proper `tags` of the vector tile protobuf.
 
-    <p class='fallback-hide fill-darken0 round inline pad2x pad1y'>Hover over the features and the properties of the GeoJSON.</p>
-  </div>
+<div id="js-example-encoding" class="js-example clearfix">
+  <p class='fallback-hide fill-darken0 round inline pad2x pad1y'>Hover over the features and the properties of the GeoJSON.</p>
 
   <div class="js-example-body col12">
     <div class="col6 pad1">

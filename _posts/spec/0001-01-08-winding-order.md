@@ -12,12 +12,9 @@ Historically map tiles have been rendered as images, which are difficult to extr
 
 In order for renderers to appropriately distinguish which polygons are holes and which are unique geometries, the specification clarifies any polygon interior rings must be oriented with the opposite winding order than their parent exterior rings and all interior rings must directly follow the exterior ring they belong to. Exterior rings must be oriented clockwise and interior rings must be oriented counter-clockwise (when viewed in screen coordinates).
 
-<div id="js-example-encoding" class="js-example clearfix">
-  <div class="js-example-header">
-    <h3>The importance of winding order</h3>
-    <p>The following example geometries show how encoding a ring's winding order can affect the rendered result. Each example assumes all rings are part of the same multipolygon.</p>
-  </div>
+The following example geometries show how encoding a ring's winding order can affect the rendered result. Each example assumes all rings are part of the same multipolygon.
 
+<div id="js-example-encoding" class="js-example clearfix">
   <div class="js-example-body">
     <div class="wo-block col12 clearfix">
       <div class="col6 pad1"><strong>Description</strong></div>

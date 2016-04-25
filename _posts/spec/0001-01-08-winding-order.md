@@ -8,6 +8,8 @@ category: specification
 
 Winding order refers to the direction a ring is drawn in a vector tile, either clockwise or counter-clockwise. Many geometries are multipolygons with "holes", which are also represented as polygon rings. It is important to be able to infer winding order to extract source data from a vector tile and understand if the geometry is part of a multipolygon or a unique polygon.
 
+Historically map tiles have been rendered as images, which are difficult to extract information from. Renderers, such as Mapnik, are able to create rings from geometry and render an image without worrying about whether a polygon was part of a multipolygon or not, since the rendered image will look the same. Now that vector tiles are rendered on the fly with GL, information about the polygons needs to be extracted. When styling a specific multipolygon, this ensures all parts of the feature are styled and not just the selected ring. Winding order allows renderers to extract this information effectively.
+
 In order for renderers to appropriately distinguish which polygons are holes and which are unique geometries, the specification clarifies any polygon interior rings must be oriented with the opposite winding order than their parent exterior rings and all interior rings must directly follow the exterior ring they belong to. Exterior rings must be oriented clockwise and interior rings must be oriented counter-clockwise (when viewed in screen coordinates).
 
 <div id="js-example-encoding" class="js-example clearfix">

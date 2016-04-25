@@ -27,6 +27,10 @@ section {
   font-size: 1.1em;
   line-height: 1.65em;
 }
+/*.content blockquote {
+  color: #999;
+  font-style: italic;
+}*/
 @media only screen and (min-width: 1200px) {
   .js-example {
     margin: 5em -25% 5em -20px;

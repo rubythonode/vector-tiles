@@ -22,7 +22,7 @@ A common question, when it comes to clipping is "how do renderers know which lin
 
 ### Simplification
 
-The conversion from geographic coordinates (latitude and longitude) to vector tile coordinates (x, y) is an important step, but can be implemented in many different ways prior to vector tile encoding. It is not included in this specification, but there are some important GOTCHAs we'd like to point out.
+The conversion from geographic coordinates (latitude and longitude) to vector tile coordinates (x, y) is an important step, but can be implemented in many different ways prior to vector tile encoding. It is not included in this specification, but there are some important GOTCHAs worth noting:
 
 <div class="js-example clearfix">
   <div class="js-example-header">

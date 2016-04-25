@@ -16,9 +16,6 @@ body {}
   margin-left: 2em;
   line-height: 1.5em;
 }
-/*.vtnav {
-  width: 100%;
-}*/
 section {
   margin-bottom: 3em;
 }
@@ -27,10 +24,6 @@ section {
   font-size: 1.1em;
   line-height: 1.65em;
 }
-/*.content blockquote {
-  color: #999;
-  font-style: italic;
-}*/
 @media only screen and (min-width: 1200px) {
   .js-example {
     margin: 5em -25% 5em -20px;
@@ -76,10 +69,7 @@ td:nth-child(2) {
 
 Oversimplification example
 */
-.simplification-example {
-  width: 100%;
-  height: auto;
-}
+.simplification-example {}
 .simplification-example g {
   opacity: 0;
   transition: 1s;

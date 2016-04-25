@@ -97,8 +97,8 @@ The conversion from geographic coordinates (latitude and longitude) to vector ti
           </g>
           <g id="flip4">
             <text x="0" y="10" font-size="12">4 / 4</text>
-            <text x="0" y="24" font-size="12">Simplifying the final point flips the triangle</text>
-            <text x="0" y="38" font-size="12">and reverses the winding order</text>
+            <text x="0" y="24" font-size="12">Simplifying the final point flips the</text>
+            <text x="0" y="38" font-size="12">triangle and reverses the winding order</text>
             <polygon points="36.06 204.47 219.82 83.96 153.8 155.53 36.06 204.47" class="flip-ring flip-dashed"/>
             <polygon points="56.55 181.49 180.46 118.51 119.54 119.54 56.55 181.49" class="flip-ring flip-inner"/>
           </g>

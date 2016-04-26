@@ -1,20 +1,17 @@
 # [mapbox.com/vector-tiles](https://mapbox.com/vector-tiles)
 
-This is a home for all vector tile documentation on mapbox.com.
+This is a home for all vector tile documentation at mapbox.com.
 
-* What are vector tiles
+* What are vector tiles?
 * `mapbox-streets` & `mapbox-terrain` documentation
-* Vector tile specification interactive
+* Vector tile specification guide
 
 ### Contribute
 
-Uses Jekyll to generate pages.
+Ideas on how to improve these pages? Fork this repository and make a pull request!
 
-**Generate docs**
+This site uses Jekyll to generate the static pages. Run the following command and you will be able to navigate to `http://localhost:4000/vector-tiles/` in your browser to view the site.
 
 ```bash
 jekyll serve --watch
-# listen at http://localhost:4000/vector-tiles/
 ```
-
-All pages are in the `_posts/` directory and use the `_layouts/docs.html` layout.

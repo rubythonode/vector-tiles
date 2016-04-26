@@ -8,15 +8,14 @@ category: specification
 
 Winding order refers to the direction a ring is drawn in a vector tile, either clockwise or counter-clockwise. Many geometries are multipolygons with "holes", which are also represented as polygon rings. It is important to be able to infer winding order to extract source data from a vector tile and understand if the geometry is part of a multipolygon or a unique polygon.
 
-In order for renderers to appropriately distinguish which polygons are holes and which are unique geometries, the specification clarifies any polygon interior rings must be oriented with the opposite winding order than their parent exterior rings and all interior rings must directly follow the exterior ring they belong to. Exterior rings must be oriented clockwise and interior rings must be oriented counter-clockwise (when viewed in screen coordinates).
+Extracting the original data from images has been difficult on maps in the past, because of the loss of underlying metadata from the geometry that might have been used to create the image. However, with the introduction of client side rendering of vector tiles via GL technologies, the raw geometry data has become useful suddenly for a source of information outside of just rendering.
+
+In order for renderers to appropriately distinguish which polygons are holes and which are unique geometries, the specification requires all polygons to be valid ([OGC validity](http://www.opengeospatial.org/standards/sfa)). Any polygon interior rings must be oriented with the opposite winding order than their parent exterior rings and all interior rings must directly follow the exterior ring they belong to. Exterior rings must be oriented clockwise and interior rings must be oriented counter-clockwise (when viewed in screen coordinates).
+
+The following example geometries show how encoding a ring's winding order can affect the rendered result. Each example assumes all rings are part of the same multipolygon.
 
 <div id="js-example-encoding" class="js-example clearfix">
-  <div class="js-example-header pad2">
-    <h3>The importance of winding order</h3>
-    <p>The following example geometries show how encoding a ring's winding order can affect the rendered result. Each example assumes all rings are part of the same multipolygon.</p>
-  </div>
-
-  <div class="js-example-body pad2">
+  <div class="js-example-body">
     <div class="wo-block col12 clearfix">
       <div class="col6 pad1"><strong>Description</strong></div>
       <div class="col3 pad1" style="text-align: center;"><strong>Winding order</strong></div>

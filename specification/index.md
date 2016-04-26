@@ -2,6 +2,6 @@
 title: Mapbox Vector Tile Specification
 layout: specification
 permalink: /specification/
-class: fill-light
 options: full
+description: A specification for encoding tiled vector data.
 ---

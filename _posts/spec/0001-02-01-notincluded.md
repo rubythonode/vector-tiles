@@ -22,14 +22,10 @@ A common question, when it comes to clipping is "how do renderers know which lin
 
 ### Simplification
 
-The conversion from geographic coordinates (latitude and longitude) to vector tile coordinates (x, y) is an important step, but can be implemented in many different ways prior to vector tile encoding. It is not included in this specification, but there are some important GOTCHAs we'd like to point out.
+The conversion from geographic coordinates (latitude and longitude) to vector tile coordinates (x, y) is an important step, but can be implemented in many different ways prior to vector tile encoding. It is not included in this specification, but there are some important GOTCHAs worth noting.
 
 <div class="js-example clearfix">
-  <div class="js-example-header pad2">
-    <h3>Simplification & Rounding GOTCHAs</h3>
-    <p>Even though simplification is not a part of the specification, these are some tricky situations to keep in mind as you implement a simplification or rounding algorithm.</p>
-  </div>
-  <div class="js-example-body pad2">
+  <div class="js-example-body">
     <div class="col12 clearfix">
       <div class="col6">
         <p>Simplification can cause <strong>invalid polygons</strong> according to the OGC standards by oversimplifying polygon rings to the point where their edges overlap. See below how simplifying one line changes the rendering of a polygon by pushing the interior ring outside of the exterior ring.</p>
@@ -97,8 +93,8 @@ The conversion from geographic coordinates (latitude and longitude) to vector ti
           </g>
           <g id="flip4">
             <text x="0" y="10" font-size="12">4 / 4</text>
-            <text x="0" y="24" font-size="12">Simplifying the final point flips the triangle</text>
-            <text x="0" y="38" font-size="12">and reverses the winding order</text>
+            <text x="0" y="24" font-size="12">Simplifying the final point flips the</text>
+            <text x="0" y="38" font-size="12">triangle and reverses the winding order</text>
             <polygon points="36.06 204.47 219.82 83.96 153.8 155.53 36.06 204.47" class="flip-ring flip-dashed"/>
             <polygon points="56.55 181.49 180.46 118.51 119.54 119.54 56.55 181.49" class="flip-ring flip-inner"/>
           </g>
@@ -112,7 +108,9 @@ The conversion from geographic coordinates (latitude and longitude) to vector ti
 
 Interested in diving into the complete specification? Take a look at the [repository on Github]({{site.version_url}}{{site.current}}). If you have any questions or notice anything incorrect with this page or the specification, you can [submit an issue](https://github.com/mapbox/vector-tiles/issues) and we'll work through it.
 
-[Back to vector tiles](/vector-tiles/)
+If you are interested in contributing please refer to the [`CONTRIBUTING.md`]({{site.version_url}}) file on GitHub.
+
+<a href='/vector-tiles' class='button icon prev'>Back to vector tiles</a>
 
 <script>
 setInterval(function() {

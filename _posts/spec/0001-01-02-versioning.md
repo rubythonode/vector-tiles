@@ -10,8 +10,6 @@ The specification is versioned based on `major.minor` notation. The `major` vers
 
 The `major` version in the specification name is synonymous with the `version` field in a Mapbox Vector Tile layer. See the `3.1. Layers` section for more details.
 
-Current version: **2.1**
-
 **Version** | **Date of release** | **Updates**
 -|-|-
 **`2.1`** | January 19th, 2016| Correction to the wording in a few locations of the 2.0 specification.

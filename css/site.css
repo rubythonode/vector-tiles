@@ -1,6 +1,7 @@
 body {}
 .header {
   margin-bottom: 3em;
+  margin: auto;
 }
 .container {
   margin: auto;
@@ -15,23 +16,23 @@ body {}
   margin-left: 2em;
   line-height: 1.5em;
 }
-/*.vtnav {
-  width: 100%;
-}*/
-
 section {
   margin-bottom: 3em;
 }
-.js-example {
-  margin-left: -20px;
-  margin-right: -20px;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 1em;
+.content p,
+.content li {
+  font-size: 1.1em;
+  line-height: 1.65em;
 }
-.js-example-header {
-  background: #ffffe5;
-  margin-bottom: 1em;
+@media only screen and (min-width: 1200px) {
+  .js-example {
+    margin: 2em -25% 5em -20px;
+  }
+}
+.js-example {
+  font-family: monospace;
+  padding-left: 20px;
+  border-left: 5px solid #3bb2d0;
 }
 .js-example-body {}
 td {
@@ -47,15 +48,24 @@ td:nth-child(2) {
   font-weight: 900;
 }
 
+.sidebar ol {
+  margin-left: 1em;
+  list-style-type: decimal;
+}
+.sidebar li {
+  color: #c0c0c0;
+  font-weight: 800;
+  margin-bottom: 0.7em;
+  line-height: 1.3em;
+  font-family: monospace;
+}
+
 
 /*
 
 Oversimplification example
 */
-.simplification-example {
-  width: 100%;
-  height: auto;
-}
+.simplification-example {}
 .simplification-example g {
   opacity: 0;
   transition: 1s;
@@ -278,16 +288,8 @@ Winding order example
 
 Encoding Example
 */
-#visuals {
-  float: right;
-  margin-left: 1em;
-}
 canvas {
   transition: 1s;
-}
-#info {
-  float: left;
-  width: auto;
 }
 #vt-title {
   display: block;
@@ -318,9 +320,6 @@ canvas {
 }
 .black { 
   background-color: #333333;
-}
-#vt-next {
-  float: right;
 }
 #vt-next:hover {}
 #vt-next:focus {}

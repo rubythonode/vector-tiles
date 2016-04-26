@@ -19,11 +19,7 @@ body {}
 section {
   margin-bottom: 3em;
 }
-.content p,
-.content li {
-  font-size: 1.1em;
-  line-height: 1.65em;
-}
+
 @media only screen and (min-width: 1200px) {
   .js-example {
     margin: 2em -25% 5em -20px;
@@ -49,7 +45,7 @@ td:nth-child(2) {
 }
 
 .sidebar ol {
-  margin-left: 1em;
+  margin-left: 2em;
   list-style-type: decimal;
 }
 .sidebar li {

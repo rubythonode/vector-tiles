@@ -513,6 +513,9 @@ The __`maritime`__ field can be used as a filter to downplay or hide maritime bo
 }
 </pre>
 
+<h4>ISO 3166-1 Codes</h4>
+
+The __`iso_3166_1`__ field contains the [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166) code or codes that apply to a boundary. For subnational boundaries this will be a single code of the parent country. For international boundaries between two countries, the value will be the codes of both countries in alphabetical order, separated by a dash (`-`).
 
 <!-- COUNTRY_LABEL -->
 <a class='doc-section' id='country_label'></a>

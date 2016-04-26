@@ -33,8 +33,4 @@ This is a step-by-step example showing how a single vector tile encodes geometry
 
 </div>
 
-### How are geometry clipped?
-
-Geometry clipping is not considered part of this specification. 
-
 <script src="{{site.baseurl}}/js/site.js"></script>

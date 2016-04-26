@@ -1,26 +1,5 @@
-<div class='space-bottom sidebar'>
-  <ol>
-  {% for post in site.categories.specification reversed %}
-    <li><a href="#{{ post.hash }}">{{ post.title }}</a></li>
-  {% endfor %}
-  </ol>
-</div>
-
-<!-- <div class='space-bottom'>
-  <span class="strong block quiet">Versions</span>
-  <ul>
-  {% for v in site.versions %}
-    <li><a href="{{site.version_url}}{{v}}">{{v}}</a></li>
-  {% endfor %}
-  </ul>
-</div>
-
-<div class='space-bottom'>
-  <span class="strong block quiet">License</span>
-  <p>The text of this specification is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution 3.0 United States License</a>. However, the use of this spec in products and code is entirely free: there are no royalties, restrictions, or requirements.</p>
-</div>
-
-<div class='space-bottom'>
-  <span class="strong block quiet">Contributing</span>
-  <p>If you are interested in contributing please refer to the <a href="{{site.version_url}}CONTRIBUTING.md"><code>CONTRIBUTING.md</code></a> file on GitHub.</p>
-</div> -->
+<ol>
+{% for post in site.categories.specification reversed %}
+  <li><a href="#{{ post.hash }}">{{ post.title }}</a></li>
+{% endfor %}
+</ol>

@@ -22,8 +22,9 @@ The following example geometries show how encoding a ring's winding order can af
       <div class="col3 pad1" style="text-align: center;"><strong>Rendered</strong></div>
     </div>
     <div class="wo-block col12 clearfix">
-      <div class="col6 pad1">A single ring, in clockwise order is rendered as a single, solid polygon.
-      <pre><code>Ring 1: Clockwise</code></pre>
+      <div class="col6 pad1">
+        <p>A single ring, in clockwise order is rendered as a single, solid polygon.</p>
+        <pre><code>Ring 1: Clockwise</code></pre>
       </div>
       <div class="col3 pad1">
         <svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
@@ -37,7 +38,9 @@ The following example geometries show how encoding a ring's winding order can af
       </div>
     </div>
     <div class="wo-block col12 clearfix">
-      <div class="col6 pad1">Two rings with the same winding order will render as two unique polygons overlapping.<pre><code>Ring 1: Clockwise
+      <div class="col6 pad1">
+        <p>Two rings with the same winding order will render as two unique polygons overlapping.</p>
+        <pre><code>Ring 1: Clockwise
 Ring 2: Clockwise</code></pre></div>
       <div class="col3 pad1">
         <svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
@@ -53,7 +56,9 @@ Ring 2: Clockwise</code></pre></div>
       </div>
     </div>
     <div class="wo-block col12 clearfix">
-      <div class="col6 pad1">Two rings, the first (exterior) ring is in clockwise order, while the second is counter-clockwise. This results in a "hole" in the final render.<pre><code>Ring 1: Clockwise
+      <div class="col6 pad1">
+      <p>Two rings, the first (exterior) ring is in clockwise order, while the second is counter-clockwise. This results in a "hole" in the final render.</p>
+      <pre><code>Ring 1: Clockwise
 Ring 2: Counter-Clockwise</code></pre></div>
       <div class="col3 pad1">
         <svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
@@ -69,7 +74,8 @@ Ring 2: Counter-Clockwise</code></pre></div>
     </div>
     <div class="wo-block col12 clearfix">
       <div class="col6 pad1">
-        Partially overlapping rings in a multipolygon with different winding orders. The second, counter-clockwise ring will be filled outside of the polygon, but not within. This is a result of <strong>even-odd filling</strong> style.<pre><code>Ring 1: Clockwise
+        <p>Partially overlapping rings in a multipolygon with different winding orders. The second, counter-clockwise ring will be filled outside of the polygon, but not within. This is a result of <strong>even-odd filling</strong> style.</p>
+        <pre><code>Ring 1: Clockwise
 Ring 2: Counter-Clockwise</code></pre>
       </div>
       <div class="col3 pad1">
@@ -87,7 +93,8 @@ Ring 2: Counter-Clockwise</code></pre>
     </div>
     <div class="wo-block col12 clearfix">
       <div class="col6 pad1">
-        Three rings in a multipolygon that alternate winding order.<pre><code>Ring 1: Clockwise
+        <p>Three rings in a multipolygon that alternate winding order.</p>
+        <pre><code>Ring 1: Clockwise
 Ring 2: Counter-Clockwise
 Ring 3: Clockwise</code></pre>
       </div>

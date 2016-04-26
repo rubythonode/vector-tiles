@@ -14,17 +14,17 @@ layout: default
 
 <div class='col12 clearfix'>
   <div class='limiter'>
-    <div class='col9'>
+    <div class='col9 doc'>
     {% for post in site.categories.specification reversed %}
-      <section id="{{ post.hash }}">
+      <section class="prose">
         {% if post.title != "Introduction" %}
-        <h2 class="section-header">{{ post.title }}</h2>
+        <h2 class="section-header" id="{{post.hash}}">{{post.title}}</h2>
         {% endif %}
-        <div class="content">{{ post.content }}</div>
+        <div class="content">{{post.content}}</div>
       </section>
     {% endfor %}
     </div>
-    <div class='col3 pad2x'>
+    <div class='col3 pad2x hide-mobile sidebar'>
       {% include sidebar.html %}
     </div>
   </div>

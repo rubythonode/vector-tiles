@@ -6,11 +6,10 @@ hash: introduction
 category: specification
 ---
 
-### A specification for encoding tiled vector data.
+A specification is an important means of setting standards around how data is stored and encoded. Just like applications make assumptions about what information exist in a database, Mapbox tools make assumptions about how vector tiles store geographic information. The Mapbox Vector Tile Specification explicitly provides information about file formats & extensions, projections and bounds, and the internal structure of vector tiles. This page includes:
 
-A specification is an important means of setting standards around how data are created and encoded. Just like applications make assumptions about what information exist in a database, Mapbox tools make assumptions about how data are stored in vector tiles. The specification explicitly provides information about file formats & extensions, projection and bounds, and the internal structure of vector tiles. This page aims to shed some light on the specification with
-
-1. how to incorporate the spec into your projects
-1. examples of encoding geographic information into vector tiles
-1. highlight real-world usage of the Mapbox Vector Tile Specification
-1. keep track of specification versions
+1. explanations of version distinctions
+1. examples of geometry encoding
+1. examples of attribute encoding
+1. an explanation of the importance of winding order
+1. a list of concepts *not* included in the specification

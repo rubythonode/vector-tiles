@@ -1,13 +1,12 @@
-<div class='space-bottom'>
-  <span class="strong block quiet">Contents</span>
-  <ul>
+<div class='space-bottom sidebar'>
+  <ol>
   {% for post in site.categories.specification reversed %}
     <li><a href="#{{ post.hash }}">{{ post.title }}</a></li>
   {% endfor %}
-  </ul>
+  </ol>
 </div>
 
-<div class='space-bottom'>
+<!-- <div class='space-bottom'>
   <span class="strong block quiet">Versions</span>
   <ul>
   {% for v in site.versions %}
@@ -24,4 +23,4 @@
 <div class='space-bottom'>
   <span class="strong block quiet">Contributing</span>
   <p>If you are interested in contributing please refer to the <a href="{{site.version_url}}CONTRIBUTING.md"><code>CONTRIBUTING.md</code></a> file on GitHub.</p>
-</div>
+</div> -->

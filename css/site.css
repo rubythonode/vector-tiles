@@ -26,7 +26,6 @@ section {
   }
 }
 .js-example {
-  font-family: monospace;
   padding-left: 20px;
   border-left: 5px solid #3bb2d0;
 }
@@ -50,10 +49,7 @@ td:nth-child(2) {
 }
 .sidebar li {
   color: #c0c0c0;
-  font-weight: 800;
-  margin-bottom: 0.7em;
-  line-height: 1.3em;
-  font-family: monospace;
+  margin-bottom: 0.5em;
 }
 
 

@@ -114,7 +114,7 @@ var steps = [
   {
     "name": "Step 1",
     "color": "#0074D9",
-    "description": "The first action when encoding a polygon is to point the command to a starting point. This uses the <code>MoveTo(x,y)</code> command. The <span class='poly black'>pen</span> is at <code>2, 2</code> starting at the top left of the grid.",
+    "description": "The first action when encoding a polygon is to point the command to a starting point. This uses the <code>MoveTo(x,y)</code> command. The <span class='poly black'>pen</span> is at <code>1, 2</code> starting at the top left of the grid.",
     "commandx": "MoveTo(1,2)",
     "buttonText": "Next step",
     "command": function() {},

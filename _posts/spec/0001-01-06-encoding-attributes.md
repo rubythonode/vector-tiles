@@ -25,7 +25,7 @@ Take a look at the original geojson `FeatureCollection` on the left and see how 
   "properties": {
     <span class='attr gj' data-attr='1' data-key='hello' data-value='world'>"hello": "world",</span>
     <span class='attr gj' data-attr='2' data-key='h' data-value='world'>"h": "world",</span>
-    <span class='attr gj' data-attr='3' data-key='count' data-value='1.23'>"count": 1.23</span>
+    <span class='attr gj' data-attr='3' data-key='count' data-value='123'>"count": 1.23</span>
   }
 },</span>
     <span class='feature' data-feat='2'>{
@@ -65,13 +65,13 @@ Take a look at the original geojson `FeatureCollection` on the left and see how 
   type: Point
   geometry: ...
 }</span>
-  <span class='key' id='key-hello'>keys: "hello"</span>
+<span class='key-group'>  <span class='key' id='key-hello'>keys: "hello"</span>
   <span class='key' id='key-h'>keys: "h"</span>
-  <span class='key' id='key-count'>keys: "count"</span>
-  <span class='value' id='value-world'>values: {
+  <span class='key' id='key-count'>keys: "count"</span></span>
+<span class='value-group'>  <span class='value' id='value-world'>values: {
   string_value: "world"
 }</span>
-  <span class='value' id='value-1.23'>values: {
+  <span class='value' id='value-123'>values: {
   double_value: 1.23
 }</span>
   <span class='value' id='value-again'>values: {
@@ -79,7 +79,7 @@ Take a look at the original geojson `FeatureCollection` on the left and see how 
 }</span>
   <span class='value' id='value-2'>values: {
   int_value: 2
-}</span>
+}</span></span>
   extent: 4096
 }</div>
       </div>
@@ -102,12 +102,12 @@ function featureLeave(e) {
 $('.attr').on('mouseenter', attrEnter);
 $('.attr').on('mouseleave', attrLeave);
 function attrEnter(e) {
-  console.log($(this).attr('data-attr'));
   $('#attr'+$(this).attr('data-attr')).addClass('highlight');
   $('#key-'+$(this).attr('data-key')).addClass('highlight');
   $('#value-'+$(this).attr('data-value')).addClass('highlight');
+  $('.key-group, .value-group').addClass('highlight');
 }
 function attrLeave(e) {
-  $('.tagset, .key, .value').removeClass('highlight');
+  $('.tagset, .key, .value, .key-group, .value-group').removeClass('highlight');
 }
 </script>

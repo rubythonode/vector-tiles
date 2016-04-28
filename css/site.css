@@ -146,12 +146,52 @@ Attribute encoding example
 .tagset.highlight {
   background: #ffc28d;
 }
+.key-group,
+.value-group {
+  display: inline-block;
+  border-left: 2px solid #ffffff;
+  padding-left: 5px;
+  margin-left: -5px;
+  counter-reset: section -1;
+}
+.key-group.highlight {
+  border-left: 2px solid #f9a0e5;
+}
+.value-group.highlight {
+  border-left: 2px solid #b1d6c5;
+}
+.key,
+.value {
+  position: relative;
+}
+.key:before {
+  color: #f9a0e5;
+}
+.value:before {
+  color: #b1d6c5;
+}
+.key:before,
+.value:before {
+  opacity: 0.3;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+  font-size: 9px;
+  font-weight: 900;
+  counter-increment: section;
+  content: counter(section);
+}
+.key.highlight:before,
+.value.highlight:before {
+  opacity: 1;
+}
 .key.highlight {
   background: #f9a0e5;
 }
 .value.highlight {
   background: #b1d6c5;
 }
+
 .feature:hover,
 .feat.highlight {
   background: #ccffe2;

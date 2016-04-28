@@ -8,7 +8,7 @@ category: specification
 
 Attributes are encoded in a series of `tag`s that exist within a feature in the vector that have integer values that reference `keys` and `values` designating the original key:value pairs from the geometry. For large geometry, this removes redundancy for attributes that have the same keys and similar values.
 
-Take a look at the original geojson `FeatureCollection` on the left and see how it's individual parts are encoded into the proper `tags` of the vector tile protobuf.
+Take a look at the original geojson `FeatureCollection` on the left and see how its individual parts are encoded into the proper `tags` of the vector tile protobuf.
 
 <div id="js-example-encoding" class="js-example clearfix">
   <p class='fallback-hide fill-darken0 round inline pad2x pad1y'>Hover over the features and the properties of the GeoJSON.</p>
@@ -25,7 +25,7 @@ Take a look at the original geojson `FeatureCollection` on the left and see how 
   "properties": {
     <span class='attr gj' data-attr='1' data-key='hello' data-value='world'>"hello": "world",</span>
     <span class='attr gj' data-attr='2' data-key='h' data-value='world'>"h": "world",</span>
-    <span class='attr gj' data-attr='3' data-key='count' data-value='1.23'>"count": 1.23</span>
+    <span class='attr gj' data-attr='3' data-key='count' data-value='123'>"count": 1.23</span>
   }
 },</span>
     <span class='feature' data-feat='2'>{
@@ -57,7 +57,7 @@ Take a look at the original geojson `FeatureCollection` on the left and see how 
   geometry: ...
 }</span>
   <span class='feat' id='feat2'>features {
-  id: 1
+  id: 2
   <span class='tagset' id='attr4'><span class='tag-key'>tags: 0</span>
 <span class='tag-value'>tags: 2</span></span>
   <span class='tagset' id='attr5'><span class='tag-key'>tags: 2</span>
@@ -65,13 +65,13 @@ Take a look at the original geojson `FeatureCollection` on the left and see how 
   type: Point
   geometry: ...
 }</span>
-  <span class='key' id='key-hello'>keys: "hello"</span>
+<span class='key-group'>  <span class='key' id='key-hello'>keys: "hello"</span>
   <span class='key' id='key-h'>keys: "h"</span>
-  <span class='key' id='key-count'>keys: "count"</span>
-  <span class='value' id='value-world'>values: {
+  <span class='key' id='key-count'>keys: "count"</span></span>
+<span class='value-group'>  <span class='value' id='value-world'>values: {
   string_value: "world"
 }</span>
-  <span class='value' id='value-1.23'>values: {
+  <span class='value' id='value-123'>values: {
   double_value: 1.23
 }</span>
   <span class='value' id='value-again'>values: {
@@ -79,7 +79,7 @@ Take a look at the original geojson `FeatureCollection` on the left and see how 
 }</span>
   <span class='value' id='value-2'>values: {
   int_value: 2
-}</span>
+}</span></span>
   extent: 4096
 }</div>
       </div>
@@ -102,12 +102,12 @@ function featureLeave(e) {
 $('.attr').on('mouseenter', attrEnter);
 $('.attr').on('mouseleave', attrLeave);
 function attrEnter(e) {
-  console.log($(this).attr('data-attr'));
   $('#attr'+$(this).attr('data-attr')).addClass('highlight');
   $('#key-'+$(this).attr('data-key')).addClass('highlight');
   $('#value-'+$(this).attr('data-value')).addClass('highlight');
+  $('.key-group, .value-group').addClass('highlight');
 }
 function attrLeave(e) {
-  $('.tagset, .key, .value').removeClass('highlight');
+  $('.tagset, .key, .value, .key-group, .value-group').removeClass('highlight');
 }
 </script>

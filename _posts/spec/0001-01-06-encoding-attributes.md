@@ -57,7 +57,7 @@ Take a look at the original geojson `FeatureCollection` on the left and see how 
   geometry: ...
 }</span>
   <span class='feat' id='feat2'>features {
-  id: 1
+  id: 2
   <span class='tagset' id='attr4'><span class='tag-key'>tags: 0</span>
 <span class='tag-value'>tags: 2</span></span>
   <span class='tagset' id='attr5'><span class='tag-key'>tags: 2</span>

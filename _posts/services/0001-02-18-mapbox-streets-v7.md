@@ -1098,7 +1098,8 @@ If none of the specific networks below apply to a station, the __`network`__ val
 <tr><td><code>'osaka-subway'</code></td><td>Osaka, Japan</td></tr>
 <tr><td><code>'oslo-metro'</code></td><td>Oslo, Norway</td></tr>
 <tr><td><code>'paris-metro'</code></td><td>Paris Metro, France</td></tr>
-<tr><td><code>'paris-metro.paris-rer'</code></td><td>Paris regional commuter rail, France</td></tr>
+<tr><td><code>'paris-rer'</code></td><td>Paris regional commuter rail, France</td></tr>
+<tr><td><code>'paris-metro.paris-rer'</code></td><td>Paris, France</td></tr>
 <tr><td><code>'paris-rer.paris-transilien'</code></td><td>Paris, France</td></tr>
 <tr><td><code>'paris-transilien'</code></td><td>Paris suburban rail, France</td></tr>
 <tr><td><code>'philadelphia-septa'</code></td><td>Philadelphia, Pennsylvania</td></tr>

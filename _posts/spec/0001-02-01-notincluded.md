@@ -157,3 +157,4 @@ function rotateFlips(prefix) {
     flipStep = 1;
   }
 }
+</script>

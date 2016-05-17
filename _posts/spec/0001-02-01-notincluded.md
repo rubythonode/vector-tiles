@@ -12,6 +12,23 @@ This specification is very explicit in the way a vector tile should pack data. H
 
 This specification IS NOT intended to explain how to use vector tiles as a dataset. This is something that has been considered for the future, but it will likely be a separate specification. This specification does not cover how to store, request, or share vector tiles. Consider this specification similar to how the PNG spec explains how to *pack data*.
 
+### How to encode attributes that aren't strings or numbers
+
+Attributes in geometric data, such as the `properties` object in GeoJSON can include more than just strings and numbers. They can be arrays or objects. The specification doesn't cover how to encode these values and is up to the encoder to decide. Tools like Mapnik will turn arrays and objects into strings, which requires the decoder to parse them accordingly. For example, if you had a GeoJSON property called `categories` and it was an array:
+
+```
+"categories": ["one", "two", "three"]
+```
+
+It would be converted into a string and stored in the protobuf like this:
+
+```
+keys: "categories"
+values: {
+  string_value: "[\"one\",\"two\",3]"
+}
+```
+
 ### Clipping
 
 The specification does not explain how geographic data should be clipped between vector tiles since clipping, like simplification, can be executed in many ways. Mapbox specifically clips features at a buffer around the tile (see the encoding example above). Any geometry within this buffer is assumed to carry over to another tile. This is up for consideration for a future release.

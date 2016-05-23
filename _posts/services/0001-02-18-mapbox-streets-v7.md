@@ -1013,7 +1013,7 @@ The __`maki`__ field lets you assign different icons to different types of airpo
 <tr><th>Value</th><th>Description</th></tr>
 <tr><td><code>'airport'</code></td><td>Most commercial airports</td></tr>
 <tr><td><code>'airfield'</code></td><td>Smaller airports & private airfields</td></tr>
-<tr><td><code>'heliport'</code></td><td></td>For helicopters</tr>
+<tr><td><code>'heliport'</code></td><td>For helicopters</td></tr>
 <tr><td><code>'rocket'</code></td><td>Spaceflight facilities</td></tr>
 </table>
 

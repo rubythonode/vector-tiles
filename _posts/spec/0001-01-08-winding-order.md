@@ -1,6 +1,6 @@
 ---
 layout: redirect
-redirect: /vector-tiles/specification/
+redirect: /specification/
 title: Winding order
 hash: winding-order
 category: specification

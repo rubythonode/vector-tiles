@@ -3,7 +3,7 @@ layout: docs
 section: developers
 category: services
 title: Mapbox Streets v7
-permalink: /mapbox-streets-v7
+permalink: /mapbox-streets-v7/
 options: full
 class: fill-light
 subnav:
@@ -278,10 +278,10 @@ The __`type`__ field separates different types of aeroways for styling.
 
 <table class='small space-bottom2'>
 <tr><th>Value</th><th>Description</th></tr>
-<tr><td><code>'runway'</td><td>Where planes take off & land</td></tr>
-<tr><td><code>'taxiway'</td><td>Where planes move between runways, gates, and hangars</td></tr>
-<tr><td><code>'apron'</td><td>Where planes park, refuel, load</td></tr>
-<tr><td><code>'helipad'</td><td>Where helicopters take off & land</td></tr>
+<tr><td><code>'runway'</code></td><td>Where planes take off & land</td></tr>
+<tr><td><code>'taxiway'</code></td><td>Where planes move between runways, gates, and hangars</td></tr>
+<tr><td><code>'apron'</code></td><td>Where planes park, refuel, load</td></tr>
+<tr><td><code>'helipad'</code></td><td>Where helicopters take off & land</td></tr>
 </table>
 
 

@@ -1,6 +1,6 @@
 ---
 layout: redirect
-redirect: /vector-tiles/specification/
+redirect: /specification/
 title: Implementations
 hash: implementations
 category: specification

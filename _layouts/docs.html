@@ -17,13 +17,13 @@ options: full
       {% unless item.hidden %}
       {% if item.subnav %}
       <div class='space-bottom1'>
-        <a class='block truncat strong quiet {% if page.url == item.url %} active{% endif %}' href='{{site.baseurl}}{{item.url}}/'>{{item.title}}</a>
+        <a class='block truncat strong quiet {% if page.url == item.url %} active{% endif %}' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a>
         {% for subitem in item.subnav %}
-        <a class='block truncate' href='{{site.baseurl}}{{item.url}}/#{{subitem.id}}'>{{subitem.title}}</a>
+        <a class='block truncate' href='{{site.baseurl}}{{item.url}}#{{subitem.id}}'>{{subitem.title}}</a>
         {% endfor %}
       </div>
       {% else %}
-      <a class='block truncate {% if page.url == item.url %} active{% endif %}' href='{{site.baseurl}}{{item.url}}/'>{{item.title}}</a>
+      <a class='block truncate {% if page.url == item.url %} active{% endif %}' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a>
       {% endif %}
       {% endunless %}
       {% endfor %}

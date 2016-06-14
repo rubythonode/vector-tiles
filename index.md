@@ -13,7 +13,7 @@ To get the underlying vector tile data that makes up this image, you can request
 
     http://a.tiles.mapbox.com/v4/mapbox.mapbox-streets-v7/14/4823/6160.mvt?access_token=<your access token>
 
-As the name suggests, vector tiles contain vector data instead of the rendered image. They contain geometries and metadata -- like road names, place names, house numbers -- in a compact, structured format. Vector tiles are rendered only when requested by a client, like a web browser or a mobile app. Rendering happens either in the client ([Mapbox GL JS](https://www.mapbox.com/mapbox-gl-js/api/), [Mapbox iOS SDK](https://www.mapbox.com/developers/#gl-ios), [Mapbox Android SDK](https://www.mapbox.com/developers/#android)) or on the fly on the server ([map API](https://www.mapbox.com/developers/api/maps/)).
+As the name suggests, vector tiles contain vector data instead of the rendered image. They contain geometries and metadata -- like road names, place names, house numbers -- in a compact, structured format. Vector tiles are rendered only when requested by a client, like a web browser or a mobile app. Rendering happens either in the client ([Mapbox GL JS](https://www.mapbox.com/mapbox-gl-js/api/), [Mapbox iOS SDK](https://www.mapbox.com/developers/#gl-ios), [Mapbox Android SDK](https://www.mapbox.com/developers/#android)) or on the fly on the server ([map API](https://www.mapbox.com/developers/api/maps/)). The [specification overview page](https://www.mapbox.com/vector-tiles/specification/) is a great place to learn more about the Mapbox Vector Tile Specification.
 
 Vector tiles have two important advantages over fully rendered image tiles:
 

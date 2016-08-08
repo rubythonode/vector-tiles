@@ -330,6 +330,85 @@ Winding order example
     transform: rotate(0deg);
   }
 }
+/*#winding-order-axis {
+  position: relative;
+}*/
+.axis {
+  background: #c0c0c0;
+  color: #c0c0c0;
+}
+#axis-bump {
+  margin-top: -47px;
+}
+#x-axis {
+  width: 100px;
+  height: 1px;
+}
+#y-axis {
+  height: 100px;
+  width: 1px;
+}
+#y-axis:before,
+#x-axis:before {
+  background: white;
+  color: #c0c0c0;
+  font-weight: 900;
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  font-size: 10px;
+}
+#y-axis:before {
+  content: "y";
+  vertical-align: middle;
+  top: 45%;
+  left: 7px;
+  line-height: 11px;
+}
+#x-axis:before {
+  content: "x";
+  left: 45%;
+  text-align: center;
+  line-height: 0;
+}
+#y-axis:after,
+#x-axis:after {
+  position: absolute;
+  border-color: #c0c0c0;
+}
+#y-axis:after {
+  content: "";
+  top: 110px;
+  border-top: 5px solid #c0c0c0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  left: 7px;
+}
+#x-axis:after {
+  content: "";
+  left: 110px;
+  top: 7px;
+  border-left: 5px solid #c0c0c0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+@media only screen and (min-width: 1200px) {
+  #axis-bump {
+    margin-top: -89px
+  }
+  #x-axis {
+    width: 200px;
+  }
+  #y-axis {
+    height: 200px;
+  }
+  #y-axis:after {
+    top: 210px;
+  }
+  #x-axis:after {
+    left: 210px;
+  }
+}
 
 
 

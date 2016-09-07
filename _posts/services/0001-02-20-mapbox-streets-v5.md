@@ -69,13 +69,13 @@ There are 5 different name fields for each of the label layers:
 <table class='small'>
 <tr><th>Field</th><th>Description</th></tr>
 <tr><td><code><strong>name</strong></code></td><td>The name (or names) used locally for the place.</td></tr>
-<tr><td><code><strong>name_en</strong></code></td><td>English (if available)</td></tr>
-<tr><td><code><strong>name_es</strong></code></td><td>Spanish (if available)</td></tr>
-<tr><td><code><strong>name_fr</strong></code></td><td>French (if available)</td></tr>
-<tr><td><code><strong>name_de</strong></code></td><td>German (if available)</td></tr>
+<tr><td><code><strong>name</strong></code></td><td>The name (or names) used locally for the place.</td></tr>
+<tr><td><code><strong>name_en</strong></code></td><td>English (if available, otherwise same as name)</td></tr>
+<tr><td><code><strong>name_es</strong></code></td><td>Spanish (if available, otherwise same as name_en)</td></tr>
+<tr><td><code><strong>name_fr</strong></code></td><td>French (if available, otherwise same as name_en)</td></tr>
+<tr><td><code><strong>name_de</strong></code></td><td>German (if available, otherwise same as name_en)</td></tr>
 </table>
 
-For the Spanish, French, and German labels there are additional fallback conditions. Where the local name is in a non-latin writing system and no Spanish/French/German translation is available, these fields will show an English or international version of the name if possible, otherwise they will show the local name.
 
 <h3>OSM IDs</h3>
 

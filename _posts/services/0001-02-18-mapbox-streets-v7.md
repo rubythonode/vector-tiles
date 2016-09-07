@@ -70,17 +70,15 @@ There are 7 different name fields for each of the label layers:
 <table class='small space-bottom2'>
 <tr><th>Field</th><th>Description</th></tr>
 <tr><td><code><strong>name</strong></code></td><td>The name (or names) used locally for the place.</td></tr>
-<tr><td><code><strong>name_en</strong></code></td><td>English (if available)</td></tr>
-<tr><td><code><strong>name_es</strong></code></td><td>Spanish&#42; (if available)</td></tr>
-<tr><td><code><strong>name_fr</strong></code></td><td>French&#42; (if available)</td></tr>
-<tr><td><code><strong>name_de</strong></code></td><td>German&#42; (if available)</td></tr>
-<tr><td><code><strong>name_ru</strong></code></td><td>Russian (if available)</td></tr>
-<tr><td><code><strong>name_zh</strong></code></td><td>Chinese&dagger; (if available)</td></tr>
+<tr><td><code><strong>name_en</strong></code></td><td>English (if available, otherwise same as name)</td></tr>
+<tr><td><code><strong>name_es</strong></code></td><td>Spanish (if available, otherwise same as name_en)</td></tr>
+<tr><td><code><strong>name_fr</strong></code></td><td>French (if available, otherwise same as name_en)</td></tr>
+<tr><td><code><strong>name_de</strong></code></td><td>German (if available, otherwise same as name_en)</td></tr>
+<tr><td><code><strong>name_ru</strong></code></td><td>Russian (if available, otherwise same as name)</td></tr>
+<tr><td><code><strong>name_zh</strong></code></td><td>Chinese&#42; (if available, otherwise same as name)</td></tr>
 </table>
 
-&#42; For the Spanish, French, and German labels there are additional fallback conditions. Where the local name is in a non-latin writing system and no Spanish/French/German translation is available, these fields will show an English or international version of the name if possible, otherwise they will show the local name.
-
-&dagger; The `name_zh` field contains Mandarin using simplified Chinese characters for our custom label layers: `#country_label`, `#state_label`, and `#marine_label`. All other label layers are sourced from OpenStreetMap and may contain one of several dialects and either simplified or traditional Chinese characters in the `name_zh` field.
+&#42; The `name_zh` field contains Mandarin using simplified Chinese characters for our custom label layers: `#country_label`, `#state_label`, and `#marine_label`. All other label layers are sourced from OpenStreetMap and may contain one of several dialects and either simplified or traditional Chinese characters in the `name_zh` field.
 
 
 <h3>Boolean fields</h3>

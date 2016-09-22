@@ -329,7 +329,7 @@ The __`underground`__ field is usually `false`, but will be `true` for buildings
 
 <h4>Building types</h4>
 
-The __`type`__ field contains the value of the `building` tag from OpenStreetMap, with 2 exceptions. The combination of `building=yes` in OpenStreetMap translates to `type=building` in Mapbox Streets, and any object with a `building:part` tag value other than `no` will have a `type` of `building:part` in Mapbox Streets.
+The __`type`__ field lets you differentiate building parts from building outlines. Building part polygons intended primarily for 3D rendering have a value of `building:part`. Building outlines (covering the full footprint of a building) will have a value of `building` if tagged as `building=yes` on OpenStreetMap, otherwise the value will match the `building` tag from OpenStreetMap ([see TagInfo for common values](http://taginfo.osm.org/keys/building#values)).
 
 <h4>Building heights</h4>
 

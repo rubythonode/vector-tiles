@@ -327,6 +327,18 @@ Large buildings appear at zoom level 13, and all buildings are included in zoom 
 
 The __`underground`__ field is usually `false`, but will be `true` for buildings that are underground (for example, some subway stations).
 
+<h4>Building types</h4>
+
+The __`type`__ field lets you differentiate building parts from building outlines. Building part polygons intended primarily for 3D rendering have a value of `building:part`. Building outlines (covering the full footprint of a building) will have a value of `building` if tagged as `building=yes` on OpenStreetMap, otherwise the value will match the `building` tag from OpenStreetMap ([see TagInfo for common values](http://taginfo.osm.org/keys/building#values)).
+
+<h4>Building heights</h4>
+
+The __`height`__ field contains the height of a building or building part in meters (rounded to the nearest integer). In many cases this value is derived from the `building:levels` tag on OpenStreetMap - we estimate 3 meters per level if no exact height is specified.
+
+The __`min_height`__ field contains the height in meters from the ground to the _bottom_ of a building part, for cases where the bottom of the part is not on the ground. This allows for proper extrusion rendering of things such as sky bridges and cantilevered building parts.
+
+The __`extrude`__ field is `true` or `false` depending one whether the object should be included in 3D-extrusion renderings. For example a complex building might have various `building:part` objects mapped with different heights, in addition to a building object representing the footprint of the entire building. Only the `building:part` objects are needed for 3D rendering, so the full footprint outline will have an `extrude` value of `false`.
+
 
 <!-- LANDUSE_OVERLAY -->
 <a class='doc-section' id='landuse_overlay'></a>

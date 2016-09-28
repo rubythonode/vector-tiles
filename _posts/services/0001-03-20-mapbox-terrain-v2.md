@@ -72,12 +72,12 @@ The landcover layer provides a generalized backdrop of vegetation, agriculture, 
 The __`class`__ field is used for styling different types of landcover. The classes are designed to look best when there is a smooth color gradient across from wood → scrub → grass → crop → map background → snow. Thin strips of "grass" or "crop" along the edge of a wooded area might not necessarily represent actual grass or cropland, but are there to smooth the transition from wood to bare land.
 
 <table class='small'>
-<tr><th>Value</th><th>Description</th></tr>
-<tr><td><code>'wood'</code></td><td>The area is mostly wooded or forest-like.</td></tr>
-<tr><td><code>'scrub'</code></td><td>The area is either mostly bushy or a mix of wooded and grassy</td></tr>
-<tr><td><code>'grass'</code></td><td>The area is mostly grassy.</td></tr>
-<tr><td><code>'crop'</code></td><td>The area is mostly agricultural, or thin/patchy grass</td></tr>
-<tr><td><code>'snow'</code></td><td>The area is mostly permanent ice, glacier or snow</td></tr>
+<tr><th>Value</th><th>Description</th><th>Photograph</th></tr>
+<tr><td><code>'wood'</code></td><td>The area is mostly wooded or forest-like.</td><td><a href='https://en.wikipedia.org/wiki/File:Biogradska_suma.jpg'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Biogradska_suma.jpg/200px-Biogradska_suma.jpg'></a></td></tr>
+<tr><td><code>'scrub'</code></td><td>The area is either mostly bushy or a mix of wooded and grassy</td><td><a href='https://commons.wikimedia.org/wiki/File:Scrubland_and_little-used_Pasture_-_geograph.org.uk_-_229078.jpg'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Scrubland_and_little-used_Pasture_-_geograph.org.uk_-_229078.jpg/200px-Scrubland_and_little-used_Pasture_-_geograph.org.uk_-_229078.jpg'></a></td></tr>
+<tr><td><code>'grass'</code></td><td>The area is mostly grassy.</td><td><a href='https://commons.wikimedia.org/wiki/File:Konza1.jpg'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Konza1.jpg/200px-Konza1.jpg'></a></td></tr>
+<tr><td><code>'crop'</code></td><td>The area is mostly agricultural, or thin/patchy grass</td><td><a href='https://en.wikipedia.org/wiki/File:Chinafarmland.jpg'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Chinafarmland.jpg/200px-Chinafarmland.jpg'></a></td></tr>
+<tr><td><code>'snow'</code></td><td>The area is mostly permanent ice, glacier or snow</td><td><a href='https://commons.wikimedia.org/wiki/File:Grosser_Aletschgletscher_3178.JPG'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Grosser_Aletschgletscher_3178.JPG/200px-Grosser_Aletschgletscher_3178.JPG'></a></td></tr>
 </table>
 
 <pre>

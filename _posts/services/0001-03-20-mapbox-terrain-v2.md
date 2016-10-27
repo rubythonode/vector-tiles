@@ -175,6 +175,16 @@ Contour lines indicate vertical dimension on a region by joining points of equal
 
 The __`ele`__ field stores the elevation of each contour line in meters and can be used for labeling or filtering. Ideally the values range from <code>-410</code> near the shore of the Dead Sea to <code>8840</code> near the peak of Mt Everest, but due to bugs and inconsistencies values outside this range may exist.
 
+<table class='small'>
+<tr><th>Zoom level</th><th>Contour Interval</th></tr>
+<tr><td> 9 </td><td>500 meters</td></tr>
+<tr><td>10 </td><td>200 meters</td></tr>
+<tr><td>11 </td><td>100 meters</td></tr>
+<tr><td>12 </td><td> 50 meters</td></tr>
+<tr><td>13 </td><td> 20 meters</td></tr>
+<tr><td>14+</td><td> 10 meters</td></tr>
+</table>
+
 <pre>
 <span class='quiet'>CartoCSS Example:</span>
 #contour {
@@ -185,16 +195,15 @@ The __`ele`__ field stores the elevation of each contour line in meters and can 
 
 <h4>Index lines</h4>
 
-The __`index`__ field can be used to accentuate index contours, but it can also be used to reduce the contour density if you wish. Starting at zoom 9, index contours are available to style as follows:
+The __`index`__ field can be used to accentuate index contours, but it can also be used to reduce the contour density if you wish. The highest value that applies to a contour will be the __`index`__ value, so if you want to highlight every fifth line, you need to select both `index=5` and `index=10`. If you want to highlight every other line, you need to select both `index=2` and `index=10` (or both `index=1` and `index=5`).
 
 <table class='small'>
-<tr><th>Value</th><th>Zooms available</th><th>Description</th></tr>
-<tr><td><code>null</code></td><td>None of the above</td><td>None of the above</td></tr>
-<tr><td><code>-1</code></td><td><code>z9+</code></td><td>Sea level coastline</td></tr>
-<tr><td><code>1</code></td><td><code>z9+</code></td><td>Every 1st line</td></tr>
-<tr><td><code>2</code></td><td><code>z10+</code></td><td>Every 2nd line</td></tr>
-<tr><td><code>5</code></td><td><code>z11+</code></td><td>Every 5th line</td></tr>
-<tr><td><code>10</code></td><td><code>z12+</code></td><td>Every 10th line</td></tr>
+<tr><th>Value</th><th>Description</th></tr>
+<tr><td><code>-1</code></td><td>Sea level coastline</td></tr>
+<tr><td><code> 1</code></td><td>Every 1st line</td></tr>
+<tr><td><code> 2</code></td><td>Every 2nd line</td></tr>
+<tr><td><code> 5</code></td><td>Every 5th line</td></tr>
+<tr><td><code>10</code></td><td>Every 10th line</td></tr>
 </table>
 
 <p><pre><span class='quiet'>CartoCSS Example:</span>

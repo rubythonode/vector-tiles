@@ -46,10 +46,10 @@ Mapbox Traffic can be used to display congestion for both directions on two way 
 
 ### Data updates
 
-Mapbox Traffic receives two different types of data update:
+Mapbox Traffic receives two different types of data updates:
 
-- Traffic speeds and densities, used to derive `congestion` are updated approximately every 5 minutes
-- Road geometries, based on OpenStreetMap are periodically updated
+- Traffic speeds and densities: used to derive congestion, updated approximately every 5 minutes
+- Road geometries: based on OpenStreetMap, periodically updated
 
 
 ## Layer Reference

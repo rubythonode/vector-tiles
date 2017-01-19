@@ -88,7 +88,7 @@ The __`congestion`__ field is a measure of the relative slowdown a road segment 
 
 <table class='small'>
 <tr><th>Value</th></tr>
-<tr><td><code>'light'</code></td></tr>
+<tr><td><code>'low'</code></td></tr>
 <tr><td><code>'moderate'</code></td></tr>
 <tr><td><code>'heavy'</code></td></tr>
 <tr><td><code>'severe'</code></td></tr>

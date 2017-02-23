@@ -501,6 +501,10 @@ Possible `aerialway` class `type` values:
 <tr><td><code>'aerialway'</code></td><td>Other or unspecified type of aerialway</td></tr>
 </table>
 
+<h4>Layers</h4>
+
+The __`layer`__ field is used to determine drawing order of overlapping road segments in the tunnel and bridge layers. 95% of values are -1, 1, or 0, and 99.9999% of values are between -5 and 5.
+
 
 <!-- ADMIN -->
 <a class='doc-section' id='admin'></a>

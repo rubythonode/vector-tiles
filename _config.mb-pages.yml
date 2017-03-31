@@ -1,6 +1,6 @@
 api: https://www.mapbox.com/core
 tileApi: https://api.mapbox.com
-env: staging
+env: production
 url: https://www.mapbox.com
 versions:
   - 2.1

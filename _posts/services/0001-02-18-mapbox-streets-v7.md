@@ -111,7 +111,7 @@ The current supported version of the Mapbox Streets vector tiles receives regula
 
 <table class='small space-bottom2'>
 <tr><th>Layer</th><th>Source</th><th>Update frequency</th></tr>
-<tr><td>most layers</td><td>OpenStreetMap replication feed</td><td>every 5 minutes</td></tr>
+<tr><td>most layers</td><td>OpenStreetMap replication feed</td><td>most changes within minutes; some delays of up to 48 hours possible due to quality assurance or server maintenance</td></tr>
 <tr><td><a href='#admin'>#admin</a></td><td>custom OpenStreetMap processing</td><td>irregular schedule; every 2-6 months</td></tr>
 <tr><td><a href='#water'>#water</a> (ocean parts)</td><td><a href='http://openstreetmapdata.com'>OpenStreetMap Data</a></td><td>irregular schedule; every 2-6 months</td></tr>
 <tr><td><a href='#marine_label'>#marine_label</a>, <a href='#country_label'>#country_label</a>, <a href='#state_label'>#state_label</a></td><td>custom data</td><td>rarely, as needed</td></tr>

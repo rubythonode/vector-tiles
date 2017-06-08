@@ -121,18 +121,16 @@ The current supported version of the Mapbox Streets vector tiles receives regula
 
 OSM IDs are not stored as object properties but as object IDs within the vector tile. This means they are not available for styling via Mapbox Studio, but can still be interacted with via Mapbox GL JS and other vector tile libraries.
 
-OpenStreetMap ID spaces are not unique across node, way, and relation object types. In order to make them unique for vector tiles, the IDs are transformed based on their OpenStreetMap object type and vector tile geometry type. IDs are multiplied by 10 and then increased by 0-4 depending on type.
+OpenStreetMap ID spaces are not unique across node, way, and relation object types. In order to make them unique for vector tiles, the IDs are transformed based on their OpenStreetMap object type.
 
 <table class='small space-bottom2'>
-<tr><th>OSM type</th><th>Geometry type                  </th><th>OSM ID transform</th></tr>
-<tr><td>node    </td><td>point                          </td><td><code>id × 10</code>       <em class='quiet'>eg. 123 → 1230</em></td></tr>
-<tr><td>way     </td><td>line                           </td><td><code>(id × 10) + 1</code> <em class='quiet'>eg. 123 → 1231</em></td></tr>
-<tr><td>way     </td><td>polygon + polygon label points </td><td><code>(id × 10) + 2</code> <em class='quiet'>eg. 123 → 1232</em></td></tr>
-<tr><td>relation</td><td>line                           </td><td><code>(id × 10) + 3</code> <em class='quiet'>eg. 123 → 1233</em></td></tr>
-<tr><td>relation</td><td>polygon + polygon label points </td><td><code>(id × 10) + 4</code> <em class='quiet'>eg. 123 → 1234</em></td></tr>
+<tr><th>OSM type</th><th>OSM ID transform</th></tr>
+<tr><td>node    </td><td><code>id × 10</code>       <em class='quiet'>eg. 123 → 1230</em></td></tr>
+<tr><td>way     </td><td><code>(id × 10) + 1</code> <em class='quiet'>eg. 123 → 1231</em></td></tr>
+<tr><td>relation</td><td><code>(id × 10) + 4</code> <em class='quiet'>eg. 123 → 1234</em></td></tr>
 </table>
 
-Much of the data in the vector tiles is merged or transformed such that OSM IDs are lost - such objects will have a __`osm_id`__ of `0`.
+In many cases, mulitple objects from OpenStreetMap will be combined into a single object in our vector tiles. For example, water polygons are unioned to avoid seams and road lines are joined to save space and simplify better. In these cases the __`osm_id`__ will either be `0`, or one of the input IDs chosen at random.
 
 ## Changelog
 

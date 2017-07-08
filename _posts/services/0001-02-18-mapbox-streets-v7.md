@@ -946,7 +946,7 @@ The __`len`__ field stores the length of the road segment in projected meters, r
 
 
 <!-- MOTORWAY_JUNCTION_LABEL -->
-<a class='doc-section' id='motorway_junction_label'></a>
+<a class='doc-section' id='motorway_junction'></a>
 <h3><a href='#motorway_junction'>#motorway_junction</a>
     <div class='geomtype' title='lines'>
         <span class='      inline small icon marker'></span>

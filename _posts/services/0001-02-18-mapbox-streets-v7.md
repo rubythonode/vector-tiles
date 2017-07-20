@@ -65,7 +65,7 @@ When you publicly use styles or software that use Mapbox Streets vector tiles, y
 
 <h3>Name fields</h3>
 
-There are 8 different name fields for each of the label layers:
+There are 10 different name fields for each of the label layers:
 
 <table class='small space-bottom2'>
 <tr><th>Field</th><th>Description</th></tr>

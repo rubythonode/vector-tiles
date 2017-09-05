@@ -128,11 +128,11 @@ In CartoCSS you can select just one or two of the 3 types by filtering on the sp
 The current supported version of the Mapbox Streets vector tiles receives regular data updates as new information becomes available and existing information is improved.
 
 <table class='small'>
-<tr><th>Layer</th><th>Source</th><th>Update frequency</th></tr>
-<tr><td>most layers</td><td>OpenStreetMap replication feed</td><td>every 6 minutes</td></tr>
-<tr><td><a href='#admin'>#admin</a></td><td>custom OpenStreetMap processing</td><td>every few months</td></tr>
-<tr><td><a href='#water'>#water</a> (ocean parts)</td><td><a href='http://openstreetmapdata.com'>OpenStreetMap Data</a></td><td>every few months</td></tr>
-<tr><td><a href='#marine_label'>#marine_label</a>, <a href='#country_label'>#country_label</a>, <a href='#country_label_line'>#country_label_line</a>, <a href='#state_label'>#state_label</a></td><td>custom data</td><td>rarely</td></tr>
+<tr><th>Layer</th><th>Source</th></tr>
+<tr><td>most layers</td><td>OpenStreetMap replication feed</td></tr>
+<tr><td><a href='#admin'>#admin</a></td><td>custom OpenStreetMap processing</td></tr>
+<tr><td><a href='#water'>#water</a> (ocean parts)</td><td><a href='http://openstreetmapdata.com'>OpenStreetMap Data</a></td></tr>
+<tr><td><a href='#marine_label'>#marine_label</a>, <a href='#country_label'>#country_label</a>, <a href='#country_label_line'>#country_label_line</a>, <a href='#state_label'>#state_label</a></td><td>custom data</td></tr>
 </table>
 
 ## Changelog
@@ -938,7 +938,7 @@ See _Name fields_ in the [overview](#Overview) for information about names and t
 
 <h4>Route numbers</h4>
 
-In addition to the standard name fields, there is also a __`ref`__ field that holds any reference codes or route numbers a road may have. 
+In addition to the standard name fields, there is also a __`ref`__ field that holds any reference codes or route numbers a road may have.
 
 To aid with shield styling in TileMill and Mapnik, the __`reflen`__ field conveys the number of characters present in the __`ref`__ field. If the ref is 'I 95', then the reflen is 4.
 

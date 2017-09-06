@@ -110,11 +110,11 @@ In Mapbox Studio, you can select just one or two or all of the 3 types with the 
 The current supported version of the Mapbox Streets vector tiles receives regular data updates as new information becomes available and existing information is improved.
 
 <table class='small space-bottom2'>
-<tr><th>Layer</th><th>Source</th><th>Update frequency</th></tr>
-<tr><td>most layers</td><td>OpenStreetMap replication feed</td><td>most changes within minutes; some delays of up to 3 days are possible due to quality assurance or server maintenance</td></tr>
-<tr><td><a href='#admin'>#admin</a></td><td>custom OpenStreetMap processing</td><td>irregular schedule; every 2-6 months</td></tr>
-<tr><td><a href='#water'>#water</a> (ocean parts)</td><td><a href='http://openstreetmapdata.com'>OpenStreetMap Data</a></td><td>irregular schedule; every 2-6 months</td></tr>
-<tr><td><a href='#marine_label'>#marine_label</a>, <a href='#country_label'>#country_label</a>, <a href='#state_label'>#state_label</a></td><td>custom data</td><td>rarely, as needed</td></tr>
+<tr><th>Layer</th><th>Source</th></tr>
+<tr><td>most layers</td><td>OpenStreetMap replication feed</td></tr>
+<tr><td><a href='#admin'>#admin</a></td><td>custom OpenStreetMap processing</td></tr>
+<tr><td><a href='#water'>#water</a> (ocean parts)</td><td><a href='http://openstreetmapdata.com'>OpenStreetMap Data</a></td></tr>
+<tr><td><a href='#marine_label'>#marine_label</a>, <a href='#country_label'>#country_label</a>, <a href='#state_label'>#state_label</a></td><td>custom data</td></tr>
 </table>
 
 <h3>OSM IDs</h3>
@@ -1147,7 +1147,7 @@ See _Name fields_ in the [overview](#Overview) for information about names and t
 
 <h4>Maki</h4>
 
-The __`maki`__ field lets you distinguish volcanoes from other types of peaks. 
+The __`maki`__ field lets you distinguish volcanoes from other types of peaks.
 
 <table class='small space-bottom2'>
 <tr><th style='width: 36em'>Value</th><th>Description</th></tr>
@@ -1174,4 +1174,3 @@ The __`elevation_m`__ and __`elevation_ft`__ fields hold the peak elevation in m
 This layer contains points used to label the street number parts of specific addresses.
 
 The __`house_num`__ field countains house and building numbers. These are commonly integers but may include letters or be only letters, eg "1600", "31B", "D". If an address has no number tag but has a house name or building name, the __`house_num`__ field will be the name instead.
-

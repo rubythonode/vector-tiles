@@ -657,7 +657,7 @@ The main field for styling labels for different kinds of places is __`type`__.
 <tr><td><code>'islet'</code></td><td>A very small island.</td></tr>
 <tr><td><code>'archipelago'</code></td><td>Collective name for a group of islands</td></tr>
 <tr><td><code>'residential'</code></td><td>Named residential areas, including subdivisions and apartment complexes</td></tr>
-<tr><td><code>'aboriginal_lands'</code></td><td>Reservations and other aboriginal lans</td></tr>
+<tr><td><code>'aboriginal_lands'</code></td><td>Reservations and other aboriginal lands</td></tr>
 </table>
 
 <h4>Capitals</h4>
